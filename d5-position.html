@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        /*
+        使用定位可以把元素摆放到页面的任意位置，是一种更高级的布局手段。
+        position的属性值：
+            1）static 默认，元素是静止的
+            2）relative 相对定位，如果不设置偏移量元素不会发生任何变化。
+                偏移量 offset：
+                    top：定位元素和定位位置上边的距离；
+                    bottom：定位元素和定位位置下边的距离；
+                    left：定位元素和定位位置左边的距离；
+                    right：定位元素和定位位置右边的距离
+                注意：
+                - 与margin的区别：不会影响到其他元素。    
+                - 相对定位是参照于元素在文档流中的位置进行定位的。
+                - 相对定位会提升元素的层级。
+                - 相对定位不会使文档脱离文档流，不会改变元素的性质，块元素还是块元素，行内元素也还是行内元素。
+            
+            3）absolute 绝对定位
+                偏移量 offset：
+                    top：定位元素和定位位置上边的距离；
+                    bottom：定位元素和定位位置下边的距离；
+                    left：定位元素和定位位置左边的距离；
+                    right：定位元素和定位位置右边的距离
+                注意：
+                - 开启后，如果不设置偏移量，元素的位置不会发生变化。
+                - 开启后，元素会从文档流中脱离，元素性质会改变，行内变成块，块的宽高被内容撑开。
+                - 绝对定位会提升元素的层级。
+                - 绝对定位元素是相对于其包含块进行定位的。
+                ？？？包含块（containing block）：
+                            正常情况下，包含块就是离当前元素最近的祖先块元素
+                - 绝对定位的包含块就是离它最近的开启了定位的祖先块元素。
+                - 如果所有的祖先元素都没开启定位，则相对于根元素<html>进行定位。
+
+
+            4）fixed 固定定位
+
+            5）sticky 开启元素的沾滞定位
+
+        */
+        .box1,.box2,.box3{
+            width: 200px;
+            height:200px;
+        }
+        
+        .box1{
+            background-color: #def;
+        }
+
+        .box2{
+            background-color: #1f1f1f;
+            /* position: relative; */
+            /* top:-200px;
+            left:200px; */
+
+            position: absolute;
+            width: auto;
+            top:300px;
+            left:400px;
+
+        }
+
+        .box3{
+            background-color: #65f;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

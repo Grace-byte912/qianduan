@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素的盒模型</title>
+    <style>
+        /* 行内元素的盒模型：
+            - 不支持设置高度和宽度，可以设置border，padding，margin但不会影响页面布局。 */
+        /* display 用来设置元素显示的类别
+            可选值：incline 行内元素
+            block 块元素
+            incline-block 行内块，既可以设置宽度和高度又不会独占一行 
+            table 把元素设置为一个表格
+            none 元素不在页面中显示（visibility为hidden时）*/
+        
+        span{
+          width: 100px;
+          height:110px;
+          background-color: rgb(19, 123, 228);
+          display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:;">超链接</a>
+    <span>i am s span.</span>
+    <div>i am a div.</div>
+</body>
+</html>

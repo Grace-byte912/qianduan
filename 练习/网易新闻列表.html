@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" src="../css/reset.css">
+    <style>
+    .news{
+        width: 300px;
+        height:450px;
+
+        background-color: #bf3;
+        border-top: 1px solid #ddd;
+    }
+
+    a{
+        text-decoration:none;
+    }
+    .news h2{
+      display:inline-block;
+      border-top: 1px red solid;
+      margin-top: -1px; 
+    }
+    .news h2.title a{
+        color:#40406b;
+        font-weight:bold;
+    }
+
+    img{
+      height:150px;
+    }
+    
+    .pic-title{
+        margin-top:-30px;
+        color:#fff;
+        font-weight: bold;
+        padding-left:30px;
+    }
+     
+    .news-list{
+        margin-top: 20px;
+        padding-left:14px;
+    }
+
+    .news-list li{ 
+        margin-bottom: 17px;
+    }
+
+    .news-list li{
+        font-size:14px;
+        color:#666;
+        margin-left: 2px;
+    }
+    .news-list a:hover{
+        color:red;
+    }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <h2 class="title">
+            <a href="javascript:;" >军事-航空</a>
+        </h2>
+        <div class="pic">
+            <a href="#">
+                <img src="wy.webp" alt="运20首飞九周年">
+                <div class="pic-title">运20首飞九周年</div>
+            </a>
+        </div>
+        <ul class="news-list">
+            <li>
+            <a href="#">
+                韩国自研五代机KF-21双座型原型机出镜
+            </a>
+            </li>
+            <li>
+            <a href="#">
+                美军仓库中准备发往乌克兰的武器装备
+            </a>
+            </li>
+            <li>
+            <a href="#">
+                土耳其：伊斯坦布尔因连日降雪“停摆”
+            </a>
+            </li>
+            <li>
+            <a href="#">
+                进入白云机场刷身份证查健康码“秒过”
+            </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
