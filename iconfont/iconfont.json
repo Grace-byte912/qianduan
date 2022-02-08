@@ -1,0 +1,44 @@
+{
+  "id": "3171183",
+  "name": "lianxi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5699784",
+      "name": "icon_menu",
+      "font_class": "icon-",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "5699785",
+      "name": "icon_news",
+      "font_class": "icon-1",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "5699786",
+      "name": "icon_buy",
+      "font_class": "icon-2",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
+      "icon_id": "5699795",
+      "name": "icon_setting",
+      "font_class": "icon-3",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "5699796",
+      "name": "icon_rest",
+      "font_class": "icon-4",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    }
+  ]
+}
